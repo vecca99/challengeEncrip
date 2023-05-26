@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
 .contenedor1{
     position: relative;
     width: 100vw;
     height: 100vh;
     background: #f3f5fc;
 }
+
 .areaTexto{
     position: absolute;
     width: 42%;
@@ -22,14 +24,17 @@
     line-height: 150%;
     background-color: #f3f5fc;
 }
+
 .areaTexto::placeholder{
     color: #0a3871;
 }
+
 .areaTexto:focus,
 .areaTexto:active{
     border: none;
     outline: none;
 }
+
 .alert{
     position: absolute;
     top: 485px;
@@ -37,6 +42,7 @@
     display: flex;
     color: #495057;
 }
+
 .terminos{
     display: flex;
     flex-direction: row;
@@ -48,6 +54,7 @@
     left: 12%;
     top: 80%;
 }
+
 .terminos p {
     font-family: "Inter";
     font-style: normal;
@@ -60,6 +67,7 @@
     order: 1;
     flex-grow: 0;
 }
+
 .contenedorBtns{
     display: flex;
     flex-direction: row;
@@ -70,6 +78,7 @@
     left: 12%;
     top: 82%; 
 }
+
 .btnEcriptar{
     align-items: center;
     justify-content: center;
@@ -85,6 +94,7 @@
     text-align: center;
     color: #fff;
 }
+
 .btnDesencriptar{
     box-sizing: border-box;
     display: flex;
@@ -105,24 +115,27 @@
     text-align: center;
     color: #0a3871;
 }
+
 .btnEcriptar:hover,
 .btnDesencriptar:hover{
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
 }
+
 .encriptado{
     display: flex;
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 70%;
+    height:95%;
     left: 60%;
     top: 5%;
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+
 .mensajeEncriptado{
     display: flex;
     flex-direction: column;
@@ -135,6 +148,7 @@
     top: 65%;
     text-align: center;
 }
+
 .mensajeEncriptado h2{
     width: 60%;
     font-family: "Inter";
@@ -145,6 +159,7 @@
     text-align: center;
     color: #343a40;
 }
+
 .mensajeEncriptado p{
     width: 80%;
     font-family: "Inter";
@@ -155,23 +170,24 @@
     text-align: center;
     color: #495057;
 }
+
 .encriptado img{
     position: absolute;
     width: 80%;
     height: 50%;
     top: 15%;
 }
-.btnCopiar{
 
-    align-items: flex-start;
+.btnCopiar{
+    align-items: center;
     justify-content: center;
     padding: 2%;
     cursor: pointer;
     gap: 8px;
     line-height: 19px;
     text-align: center;
-    width: 328px;                                    
-    height: 67px;
+    width: 80%;
+    height: 40px;
     border-radius: 24px;
     background-color: #ffffff;
     color: #0A3871;
@@ -180,77 +196,22 @@
     font-family: 'Inter';
     border: 1px solid #0A3871;
     cursor: pointer;
-    position: relative;
-    top: -218px;
-    right: 20px;       
-    display: flex;                         
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
 }
+
 .btnCopiar:hover{
     margin: 0.3%;
-    width: 318px;
+    width: 79.5%;
     padding: 1.8%;
 }
+
 .contenedorCopiar{
     display: flex;
     position: absolute;
-    bottom: 400px;
-    top: 700px;
-    padding-left: 40px;
-}
-/*Responsibidad*/
-@media (max-width: 57.5em){
-    .contenedor1{
-        display: flex ;
-        flex-direction: row;
-    }
-    .encriptar{
-        width: 100%;
-    }
-    .areaTexto{
-        width: 80%;
-        height: 60%;
-        left: 10%;
-        top: 5%;
-    }
-    .terminos{
-        width: 80%;
-        left: 10%;
-        top: 67%;
-    }
-    .terminos p {
-        font-size: 16px;
-    }
-    .contenedorBtns{
-        width: 80%;
-        left: 10%;
-        top: 70%;
-    }
-    .btnEcriptar{
-        width: 48%;
-        border-radius: 16px;
-    }
-    .btnDesencriptar{
-        width: 48%;
-        border-radius: 16px;
-    }
-    .btnEncrip:hover,.btnDesEncr:hover{
-        margin: 0.3%;
-        width: 47.5%;
-        padding: 1.8%;
-    }
-    .encriptado{
-        width: 80%;
-        height: 15%;
-        left: 10%;
-        top: 80%;
-    }
-    .mensajeEncriptado{
-        width: 100%;
-        top: 5%;
-    }
-    .encriptado img {
-        top: 0;
-        display: none;
-        visibility: hidden;
-    }
+    bottom: 3%;
+    left: 10%;
+    right: 10%;
 }
