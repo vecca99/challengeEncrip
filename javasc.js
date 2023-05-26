@@ -1,11 +1,11 @@
-  function encriptar() {
+ function encriptar() {
   let areaTexto = document.getElementById("areaTexto").value;
   let tituloMensaje = document.getElementById("tituloMensaje");
   let parrafo = document.getElementById("parrafo");
   let muneco = document.getElementById("muneco");
 
-  const patron = /^[a-z]+$/;
-  
+  const patron = /^[a-z\s]+$/;
+
   if (patron.test(areaTexto)) {
     let textoEncriptado = areaTexto
       .toLowerCase()
@@ -33,7 +33,7 @@ function desencriptar() {
   const parrafo = document.getElementById("parrafo");
   const muneco = document.getElementById("muneco");
 
-  const patron = /^[a-z]+$/;
+  const patron = /^[a-z\s]+$/;
 
   if (patron.test(areaTexto)) {
     const palabrasClave = ["enter", "imes", "ai", "ober", "ufat"];
